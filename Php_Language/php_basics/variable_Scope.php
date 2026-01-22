@@ -40,6 +40,36 @@ hello();
 hello();
 hello();
 
+// =======================
+// 4. global keyword
+// The global keyword is used to access a global variable from within a function.
+//global variables
+$a = 5;
+$b = 10; 
+
+function world(){
+    global $a, $b;
+    $b = $a + $b;
+}
+
+world();
+echo $b;
+// =====================
+// 5.  $GLOBALS Superglobal
+/*
+    PHP also stores all global variables in an array called $GLOBALS[index]. The index holds the name of the variable. This array is also accessible from within 
+    functions and can be used to update global variables directly.
+*/
+
+$val_1 = 3;
+$val_2 = 4;
+
+function king(){
+    $GLOBALS['val_2'] = $GLOBALS['val_1'] + $GLOBALS['val_2'];
+}
+king();
+
+echo $val_2;
 
 
 ?>
