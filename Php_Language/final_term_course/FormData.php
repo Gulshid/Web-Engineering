@@ -5,7 +5,7 @@
 </head>
 <body>
 <center><form method = "post" action = "InsertFormData.php">
-	<table = border = "2">
+	<table =  border = "2">
 		<tr>
 			<td>Name</td>
 			<td><input type = "text" name = "UserName" placeholder = "Please Enter User Name" required></td>
